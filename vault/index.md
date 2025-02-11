@@ -9,8 +9,8 @@ How i plan to structure my garden:
 It's a mix between the PARA method and Zettelkasten.
 
  - Inbox contains all temp notes to be moved in other states
- - Projects
- - Areas
+ - Projects: short term tasks (6 months)
+ - Areas: Long term (Lifetime) projects
  - Uni: containts files that are indexes with some explenation
    between them (like a classic latex note would be), but in this way 
    the basic components are kept in the resurces state 

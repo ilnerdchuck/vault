@@ -1,0 +1,13 @@
+---
+id: behavioural description
+aliases:
+  - behavioural
+tags:
+  - VHDL
+title: Behavioural description
+---
+
+# Behavioural description
+
+A behavioural description of a component describes the behaviour of the component with sequential statements using a [process]([[VHDL process]]) statement.
+
