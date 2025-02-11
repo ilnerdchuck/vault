@@ -1,0 +1,48 @@
+\documentclass{article}
+\usepackage[a4paper, total={6in, 8in}]{geometry}
+\usepackage[utf8]{inputenc}
+\usepackage{amsmath}
+\usepackage{afterpage}
+\usepackage{amssymb}
+\usepackage{svg}
+\usepackage{listings}
+\usepackage{physics}
+\usepackage{tikz}
+\usepackage{pgfplots}
+\usepackage{float}
+\usepackage{graphicx,wrapfig,lipsum}
+\usepackage[makeroom]{cancel}
+\usepackage{blindtext}
+\usepackage{multicol}
+\usepackage[hidelinks]{hyperref}
+\usepackage{lipsum}
+\usepackage{siunitx}
+\usepackage{imakeidx}
+\usepackage{cleveref}
+\usepackage{subfig}
+\usepackage{polynom}
+\usepackage{multicol}
+\usepackage{lipsum}
+\makeindex[columns=2, title=Indice Alfabetico, intoc]
+\pgfplotsset{compat=1.17}
+\hypersetup{
+    colorlinks=true,
+    linkcolor=black,
+    urlcolor=magenta
+    } 
+\AtBeginEnvironment{align}{\setcounter{equation}{0}}
+\urlstyle{same}
+\usepgfplotslibrary{external,fillbetween}
+\usetikzlibrary{arrows.meta}
+\restylefloat{table}
+\tikzexternalize[prefix=media/cache/]
+%Funzioni standard
+\pgfmathdeclarefunction{gauss}{2}{\pgfmathparse{1/(#2*sqrt(2*pi))*exp(-((x-#1)^2)/(2*#2^2))}%
+}
+\begin{document}
+    \include{00_cover.tex}
+    \include{01_indice.tex}
+    \include{02_chapter_01.tex}
+    
+    \include{index.tex}
+\end{document}

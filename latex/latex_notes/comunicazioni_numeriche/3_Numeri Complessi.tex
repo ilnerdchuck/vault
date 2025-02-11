@@ -1,0 +1,121 @@
+\section{Richiamo Sui Numeri Complessi}
+\subsection{Struttura di un numero complesso}
+
+    \subsubsection{Forma Cartesiana}
+            \begin{center}
+                \[
+                  z \in \mathbb{C} : z = a + jb
+                \]
+                Parte reale: $a=Re\{z\}$
+
+
+                \vspace{0.1cm}
+                Parte Immaginaria: $b=Img\{z\}$
+
+                \vspace{0.1cm}
+                {\em j} o {\em i} é la $\sqrt{-1}$  
+            \end{center}
+            
+    \subsubsection{Forma Polare}
+        \begin{center}
+            \[
+                z \in \mathbb{C} : z = \rho \ e^{j\theta} = \rho \cos(\theta) + j\rho\sin(\theta)
+            \]
+            Modulo: $\rho = |z|$
+
+
+            \vspace{0.1cm}
+            Fase: $\theta = \arg(z) \hspace{0.3cm} \theta \in [0,2\pi)$
+        \end{center}    
+        grafico forma polare-cartesiana
+        
+    \subsubsection{Complesso Coniugato}
+        \begin{itemize}
+            \item {Forma Cartesiana   
+                    \[
+                        z^* = a - jb
+                    \]
+            }
+            \item {Forma Polare
+                    \[
+                        z^* = \rho \ e^{-j\theta}
+                    \]
+            }           
+        \end{itemize}
+
+
+\subsection{Relazione Tra Forma Polare e Cartesiana}
+    \begin{itemize}
+        \item {Parte Reale e parte Immaginaria
+            \[
+                a = \rho \cos(\theta)  \ \ b = \rho \sin(\theta)   
+            \]
+        }
+        \item {Modulo
+            \[
+                \rho = |z| = \sqrt{a^2+b^2} =\sqrt{\rho^2 \cos^2(\theta) + \rho^2\sin^2(\theta)}
+            \]
+        }
+        \item {Fase
+            \[
+                 a \\> 0 \Rightarrow \theta = \arg(z) = \arctan\left(\frac{b}{a}\right)
+            \]
+            \[
+                a \\< 0 \Rightarrow \theta = \arg(z) =\pi + \arctan\left(\frac{b}{a}\right) 
+            \]
+
+        }
+    \end{itemize}
+
+
+\subsection{Operazioni}
+    Dati: $z_1 = a_1 + jb_1 = \rho_1 \ e^{j\theta_1},\hspace{0.1cm} z_2 = a_2 + jb_2 = \rho_2 \ e^{j\theta_2} $
+    \begin{itemize}
+        \item {Somma
+            \[
+                z = z_1 + z_2 = (a_1 + a_2) + j(b_1 + b_2)
+            \]
+        }
+        \item {Sottrazione
+            \[
+                z = z_1 - z_2 = (a_1 - a_2) + j(b_1 - b_2)
+            \]
+        }
+        \item {Moltiplicazione
+            \[
+                z = z_1 z_2 = \rho_1\rho_2 \ e^{j(\theta_1+\theta_2)}
+            \]
+        }
+        \item {Divisione
+            \[
+                z = \frac{z_1}{z_2} = \frac{\rho_1}{\rho_2} \ e^{j(\theta_1-\theta_2)}
+            \]
+        }
+        \item {Modulo
+            \[
+                |z| = \sqrt{zz^*} = \sqrt{a^2+b^2}  
+            \]
+            \[
+                |z|^2 = zz^* = a^2+b^2 = \rho^2
+            \]
+        }
+    \end{itemize}
+
+    \subsection{Funzioni Complesse a Variabile Reale}
+        \[
+           z \in \mathbb{C}, \hspace{0.1cm} t \in \mathbb{R} \rightarrow z_{(t)} = a_{(t)} + jb_{(t)} = \rho_{(t)} e^{j\theta_{(t)}}
+        \]
+        \begin{itemize}
+            \item {Integrale
+            \[
+                \int_{a}^{b} z_{(t)} \ dt = \int_{a}^{b} a_{(t)} + jb_{(t)} \ dt =\int_{a}^{b} a_{(t)} \ dt+\int_{a}^{b} jb_{(t)} \ dt  
+            \]
+
+            }
+            \item {Derivata
+            \[
+                \frac{d}{dt} z_{(t)}= \frac{d}{dt} a_{(t)} + jb_{(t)} =\frac{d}{dt} a_{(t)} +\frac{d}{dt} jb_{(t)}   
+            \]
+
+            }
+        \end{itemize}

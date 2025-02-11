@@ -1,0 +1,57 @@
+\documentclass{article}
+\usepackage[utf8]{inputenc}
+\usepackage{amsmath}
+\usepackage{afterpage}
+\usepackage{amssymb}
+\usepackage{svg}
+\usepackage{listings}
+\usepackage{physics}
+\usepackage{tikz}
+\usepackage{pgfplots}
+\usepackage{float}
+\usepackage{graphicx,wrapfig,lipsum}
+\usepackage[makeroom]{cancel}
+\usepackage{blindtext}
+\usepackage{multicol}
+\usepackage[hidelinks]{hyperref}
+\usepackage{lipsum}
+\usepackage{siunitx}
+\usepackage{imakeidx}
+\usepackage{cleveref}
+\usepackage{subfig}
+\usepackage{polynom}
+\usepackage{multicol}
+\makeindex[columns=2, title=Indice Alfabetico, intoc]
+\pgfplotsset{compat=1.17}
+\hypersetup{
+    colorlinks=true,
+    linkcolor=black,
+    urlcolor=magenta
+    } 
+\AtBeginEnvironment{align}{\setcounter{equation}{0}}
+\urlstyle{same}
+\usepgfplotslibrary{external,fillbetween}
+\usetikzlibrary{arrows.meta}
+\restylefloat{table}
+\tikzexternalize[prefix=media/cache/]
+%Funzioni standard
+\pgfmathdeclarefunction{gauss}{2}{\pgfmathparse{1/(#2*sqrt(2*pi))*exp(-((x-#1)^2)/(2*#2^2))}%
+}
+\begin{document}
+    \include{0_Cover.tex}
+    \include{1_indice.tex}
+    \include{2_Introduzione.tex}
+    \include{3_Numeri Complessi.tex}
+    \include{4_Introduzione ai Segnali.tex}
+    \include{5_Segnali Analogici.tex}
+    \include{6_TSF.tex}
+    \include{7_TCF.tex}
+    \include{8_Sistemi Monodimensionali.tex}
+    \include{9_TDF.tex}
+    \include{10_Teoria della Probabilitá.tex}
+    \include{11_Processi Stocastici.tex}
+    \include{12_Sistemi di Comunicazione.tex}
+    \include{13_Teoria dei Codici.tex}
+    \include{formulario.tex}
+    \include{index.tex}
+\end{document}
