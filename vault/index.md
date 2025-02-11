@@ -1,9 +1,21 @@
 ---
-title: Welcome to IlNerdChuck Vault
+id: index
+aliases: []
+tags: []
+title: Welcome to IlNerdChuck Garden
 ---
 
- Lorem ipsum dolor sit amet, consectetur adipiscing elit. Morbi sodales blandit ex vitae faucibus. Mauris eget lorem in lacus feugiat efficitur. Nulla sollicitudin, est eget pulvinar suscipit, ante ex ultrices massa, eget commodo orci risus at lectus. Nullam ut mollis nibh, in consequat nulla. Pellentesque aliquet leo massa, ac feugiat justo volutpat eleifend. Quisque at elementum tortor, nec viverra justo. Aenean finibus purus egestas, volutpat orci eu, eleifend urna. In efficitur nibh ac fringilla gravida. Nam enim lorem, cursus in luctus et, condimentum id metus. In placerat gravida est sit amet consequat. Mauris tincidunt nibh lectus, sed porta dolor mollis nec. Integer volutpat leo a mi finibus maximus. Quisque vitae nunc in nisi efficitur facilisis eget in ligula. In lobortis urna in lorem placerat, non pellentesque mauris porta.
+How i plan to structure my garden:
+It's a mix between the PARA method and Zettelkasten.
 
-Vivamus nibh augue, elementum et ligula eget, dapibus dapibus leo. Cras sed turpis tempor, commodo nulla at, dapibus lectus. Curabitur malesuada faucibus metus, sit amet tincidunt enim vulputate eu. Maecenas elit nibh, luctus at condimentum a, fermentum ut velit. Ut in lorem semper, tristique dui quis, cursus mi. Praesent leo odio, pharetra at tortor vitae, suscipit hendrerit dui. Duis quis pulvinar magna, at dapibus leo. Nam quis nisi sed diam tempor scelerisque ut eu augue. Nulla facilisi. Pellentesque habitant morbi tristique senectus et netus et malesuada fames ac turpis egestas.
+ - Inbox contains all temp notes to be moved in other states
+ - Projects
+ - Areas
+ - Uni: containts files that are indexes with some explenation
+   between them (like a classic latex note would be), but in this way 
+   the basic components are kept in the resurces state 
+ - Resurces: pool of Atomic notes (Zettelkasten)
+ - Journal: is to keep track of which notes i created on what day
+ - Archive: all notes that i consider not usefoul anymore or not suited for 
+   the other states 
 
-Cras sed lectus commodo nunc fringilla commodo. Etiam consequat volutpat magna. Pellentesque sed justo massa. Donec sed dui orci. Donec lobortis vehicula diam, eu pharetra eros bibendum a. Etiam enim lorem, tempor congue facilisis sed, accumsan et tortor. Suspendisse mauris dui, sagittis nec tellus luctus, faucibus tempor dui. Praesent sit amet ullamcorper mauris. Mauris at risus sit amet eros vulputate molestie. 

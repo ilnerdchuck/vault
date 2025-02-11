@@ -10,29 +10,29 @@ title: Specification and Simulation of Digital Systems
 ToDo: 
  - Convert all entries to notes
 
-### 02
+### 02 VHDL Combinational Logic
 * What is projected value
 * What you need to build a combinational circuit in VHDL: (have all signals in the sensitivity list) 
 * Variables and Signal in VHDL (updated immediately meanwhile signals have a projected value)
 * FSM Definitions: Formal and Other
 * Differences between variables and signals in VHDL
 * Process and sensitivity list in VHDL
-### 03
+### 03 VHDL Combinational Datapath Components
 * Delay models in VHDL: Inertia delay, transport delay and Delta delay. Why we use one or another and their keywords.
 * Descrive the 'after' statement, tell if it is synthesizable or not
 * What happens when one forgets and input in a sensitivity list 
-### 04
+### 04 Sequential Logic
 * FSM with 2 processes and 1 process only
 * Difference between one process description and two process description: differences in the sensitivity lists, is it possible to have only the clock in a sensitivity list?
 * Mealy and Moore machines
 * Asynchronous and synchronous reset, which one is better?
-### 06
+### 06 Testbench & Assertions
 * Testbench in VHDL some questions 
-### 07
+### 07 Embedded RTL Design
 * NRE cost and unit cost -> differences full custom and  FPGAs in terms of costs and volumes and also basic differences between them
 * Non Returning costs
 * Talk about FSM-D, name signals between controller and datapath
-### 08
+### 08 Optimization Techniques
 * Equivalent states
 * State equivalence
 * State reductions
@@ -49,14 +49,14 @@ ToDo:
 * what is the boolean rule that allows us to merge implicants ok Karnaugh maps 
 * Types of state encodings with advantages and disadvantages
 * difference between implicants and minterms
-### 09
+### 09 Verilog
 * Types of assignment in Verilog
 * Definition Purpose and meaning of REG in Verilog
 * Definition Purpose and meaning of Wire in Verilog
 * Blocking and non blocking assignment in Verilog
 * Differences between VHDL and Verilog
 * Parallel between process in VHDL and Always in Verilog
-### 10
+### 10 Formal verification
 * BTL LTL differences and quantifiers
 * Difference between LTL and BLT
 * Definition of characteristic functions
