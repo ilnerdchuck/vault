@@ -1,11 +1,11 @@
 ---
-id: VHDL process
+id: process
 aliases: []
 tags:
   - VHDL
 ---
 
-# process
+# Process
 
 A process is a concurrent statement: the code inside executed sequentially. 
 It's structure is composed by: 
@@ -13,7 +13,7 @@ It's structure is composed by:
  - Declarative part 
  - Sequential statement section
 
-```VHDL
+```vhdl
 process_label : process(sensitivity list)
 -- process declarative part
 begin
@@ -24,8 +24,8 @@ end process process_label;
 
 - Declarative part:
     - data object declaration
-    - [[VHDL variable]]
-    - [[VHDL Signal]]
+    - [[variable]]
+    - [[signal]]
 
 - Sequential Statements:
     - variable-assignment-statement

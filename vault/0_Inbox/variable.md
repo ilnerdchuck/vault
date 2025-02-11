@@ -1,5 +1,5 @@
 ---
-id: VHDL variable
+id: variable
 aliases: []
 tags:
   - VHDL
@@ -7,13 +7,13 @@ tags:
 
 # Variable
 
-It is used to hold any type of data. 
+
 The declaration is done in the declarative part of a process.  
 They can be used only inside a process and the scope is only inside the process they are declared in (local scope).
 The assignment is done via the `:=` symbol. 
 Their value is assigned immediately as the assignment statement occours (serialized order of execution).
 
-```VHDL
+```vhdl
 architecture rtl of signal_example is
 begin
   process 

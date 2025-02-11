@@ -1,5 +1,5 @@
 ---
-id: blocking statement
+id: Blocking Statement
 aliases: []
 tags:
   - Verilog

@@ -1,8 +1,8 @@
 ---
 id: inbox
 aliases: []
-tags: []
+tags:
+  - "[Inbox](0_Inbox/index.md)"
 title: Inbox
 ---
-
 

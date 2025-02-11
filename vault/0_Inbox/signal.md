@@ -1,5 +1,5 @@
 ---
-id: VHDL Signal
+id: signal
 aliases: []
 tags:
   - VHDL
@@ -13,9 +13,11 @@ The declaration is done in the declarative part of the architecture.
 They are shared among all the processes and statements inside the same architecture.
 The assignment of the signal can be done in two ways:
  - Concurrent statement: done inside an architecture block
- - Sequential statement: done inside a [[VHDL process]] sequential statement,signals have now two values a current value and a [[Projected Value]], the current value is replaced by the projected value at the end of the process block.
+ - Sequential statement: done inside a [[process]] sequential statement,signals have now 
+ two values a current value and a [[projected value]], the current value is replaced 
+ by the projected value at the end of the process block.
 
-```VHDL
+```vhdl
 architecture rtl of signal_example is
  -- signal declaration 
  -- signal SIG_NAME: TYPE (:= INIT_VALUE);

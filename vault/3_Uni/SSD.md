@@ -11,8 +11,8 @@ ToDo:
  - Convert all entries to notes
 
 ### 02 VHDL Combinational Logic
-* What is projected value [[Projected Value]];
-* What you need to build a combinational circuit in VHDL [[Combinational Circuit]] 
+* What is projected value [[projected value]];
+* What you need to build a combinational circuit in VHDL [[combinational circuit]] 
 * Variables and Signal in VHDL [variable](0_Inbox/1739292539-NJVE.md) [signal](0_Inbox/1739292535-ZTRC.md)
 * FSM Definitions: Formal and Other
 * Differences between variables and signals in VHDL
