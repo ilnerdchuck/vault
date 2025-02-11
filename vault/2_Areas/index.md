@@ -1,8 +1,8 @@
 ---
-id: inbox
+id: areas
 aliases: []
 tags: []
-title: Inbox
+title: Areas
 ---
 
 

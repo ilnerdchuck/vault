@@ -1,8 +1,8 @@
 ---
-id: inbox
+id: resurces
 aliases: []
 tags: []
-title: Inbox
+title: Resurces
 ---
 
 

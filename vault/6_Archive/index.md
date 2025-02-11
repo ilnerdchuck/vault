@@ -1,8 +1,8 @@
 ---
-id: inbox
+id: archive
 aliases: []
 tags: []
-title: Inbox
+title: Archive
 ---
 
 

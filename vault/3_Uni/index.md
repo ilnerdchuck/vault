@@ -1,8 +1,8 @@
 ---
-id: inbox
+id: uni
 aliases: []
 tags: []
-title: Inbox
+title: University
 ---
 
 

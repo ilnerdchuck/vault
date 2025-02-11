@@ -1,8 +1,8 @@
 ---
-id: inbox
+id: projects
 aliases: []
 tags: []
-title: Inbox
+title: Projects
 ---
 
 

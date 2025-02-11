@@ -1,8 +1,8 @@
 ---
-id: inbox
+id: journal
 aliases: []
 tags: []
-title: Inbox
+title: Journal
 ---
 
 

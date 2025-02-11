@@ -1,5 +1,5 @@
 ---
-id: index
+id: garden
 aliases: []
 tags: []
 title: Welcome to IlNerdChuck Garden
