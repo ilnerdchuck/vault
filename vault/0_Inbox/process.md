@@ -7,7 +7,7 @@ tags:
 
 # Process
 
-A process is a concurrent statement: the code inside executed sequentially. 
+A [[process]] is a concurrent statement: the code inside executed sequentially. 
 It's structure is composed by: 
  - Sensitivity list 
  - Declarative part 

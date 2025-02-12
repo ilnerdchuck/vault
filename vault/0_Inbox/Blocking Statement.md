@@ -6,3 +6,8 @@ tags:
 ---
 
 # blocking satements
+
+
+### ToDo:
+ - VHDL 
+ - Verilog

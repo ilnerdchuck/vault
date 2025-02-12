@@ -18,5 +18,4 @@ It's a mix between the PARA method and Zettelkasten.
  - Journal: is to keep track of which notes i created on what day
  - Archive: all notes that i consider not usefoul anymore or not suited for 
    the other states 
-
-![](media/images/pippi.png)
+ 

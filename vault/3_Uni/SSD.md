@@ -13,7 +13,7 @@ ToDo:
 ### 02 VHDL Combinational Logic
 * What is projected value [[projected value]];
 * What you need to build a combinational circuit in VHDL [[combinational circuit]] 
-* Variables and Signal in VHDL [variable](0_Inbox/1739292539-NJVE.md) [signal](0_Inbox/1739292535-ZTRC.md)
+* Variables and Signal in VHDL [variable](0_Inbox/1739292539-NJVE.md), [signal](0_Inbox/1739292535-ZTRC.md)
 * FSM Definitions: Formal and Other
 * Differences between variables and signals in VHDL
 * Process and sensitivity list in VHDL
@@ -50,12 +50,17 @@ ToDo:
 * Types of state encodings with advantages and disadvantages
 * difference between implicants and minterms
 ### 09 Verilog
-* Types of assignment in Verilog
+* Types of assignment in Verilog: 
+    - [[Blocking Statement|blocking satement]] 
+    - [[1739355937-non-bocking-statement|non bocking statement]]
 * Definition Purpose and meaning of REG in Verilog
+    - [[1739356114-register-data-type|Register Data Type]]
 * Definition Purpose and meaning of Wire in Verilog
-* Blocking and non blocking assignment in Verilog
+    - [[1739356158-net-data-type|Net Data Type]]
 * Differences between VHDL and Verilog
 * Parallel between process in VHDL and Always in Verilog
+    - [[process|Process]]
+    - [[1739356217-always|Always]]
 ### 10 Formal verification
 * BTL LTL differences and quantifiers
 * Difference between LTL and BLT
