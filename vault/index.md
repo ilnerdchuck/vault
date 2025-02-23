@@ -34,4 +34,7 @@ Types of notes:
 
 note structure:
  - title: title to display
- - tags: macro arera of intrest of the note (Ex. VHDL, c++, MOS tecnology)
+ - tags: macro arera of intrest of the note (Ex. VHDL, c++) specific
+    but not too mutch, a tag that is shared among more notes
+ - bottom:
+    - References: used to link other related topics
