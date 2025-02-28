@@ -2,7 +2,7 @@
 id: SSD
 aliases: []
 tags: []
-title: Specification and Simulation of Digital Systems
+title: "[SSDS] Specification and Simulation of Digital Systems"
 ---
 
 ## Exercises for the oral exam

@@ -1,0 +1,153 @@
+---
+id: "[SODS] Synthesis_and_optimization_of_digital_systems"
+aliases: []
+tags: []
+title: "[SODS] Synthesis and Optimization of Digital Systems"
+---
+
+### Sources 
+
+Suggestes Textbooks:
+
+### Course info 
+Professor: Andrea Calimera => Low power design research 
+Email: 
+
+
+
+Assistant: Valentino Peluso
+Email:
+
+
+
+
+Exam Rules:
+ - how the grading works 
+ - project 
+ - written 
+
+Electronic Dessign Automation 
+TCL scripting language
+
+# Introduction 
+
+We will analyze the physical level of a circuit it's: Synthesis.
+
+The eMarket is driven by [[1740666919-iot-device|IoT Devices]] this nodes have to be **autonomous end nodes** :
+    - Sensing: the nodes capture data 
+    - Sensemaking: 
+        - they need to make decisions => Machine Learning, can help reduce the mount of resources needed to take decisions. 
+But this brings => Design challenges:
+- Integrate a lot of sensors in a small package ([[1740667292-heterogeneous-integration-hi|Heterogeneous integration (HI)]]) ([[1740667815-multi-core|Multi Core]])
+- Resource and Efficiency Gap: do the computation of a normal CPU in a MCU 
+
+This while keeping 
+- Keep Low power usage => **Energy Efficiency** 
+- Keep Low cost
+
+> [!CAUTION]  Do more with less
+
+
+Manufacturers can achieve this goals with => [[1740669411-technology-scaling-ts|Technology scaling (TS)]] 
+
+TS => Helps to have faster MCU but it is not free performance 
+we need to keep an eye on **Power**, **Aging** and **Process Variation**
+
+As the manufacturers capabilities ends at some points further optimizations can be done, by the Designers, via: 
+[[1740670007-architectural-scaling|Architectural Scaling]] 
+
+But today applications are data intensive
+    - Memory is a bottleneck => we need to move data from CPU to memory ([[1740670374-memory-wall|Memory Wall]])
+    - We switch to dataflow cores => [[1740670519-hardware-accelerator|Hardware Accelerator]], cored designed to perform very well specific operations (like matrix operations for ML) 
+     ![data_efficiency.png](assets/imgs/data_efficiency.png)
+
+[[1740669411-technology-scaling-ts|Technology scaling (TS)]] + [[1740670007-architectural-scaling|Architectural Scaling]] = A lot of Complexity  
+- Technology scaling brings
+    - Leakage and power 
+    - Temperature 
+    - [[1740682683-process-variation|Process Variation]]
+- Manage multi processing units with [[1740667292-heterogeneous-integration-hi|Heterogeneous integration (HI)]] 
+- [!] they need to be synchronized 
+- [!] they need to be programmed
+
+[[1740671372-electronic-design-automation-eda|Electronic Design Automation (EDA)]] is introduced to reduce the difficulties in design 
+- Brings Efficiency and productivity 
+- set of automatic tools for 
+    - **Optimization**
+    - **Verification** (simulation)
+
+For example if we want to manufacture an inverter to have a precise $f_{\text{clk}} = \frac{1}{Dp = \text{Delay Propagation}}$, 
+what information the manufacturer (Si Producer) needs? 
+- we need to size the NMOS (on the left [^1])
+    - channel length
+    - all the sizes 
+    - Doping
+    - Size of the substrate
+    - a lot of variables 
+- then how we place the transistors?
+    - Layout (on the right[^1]) => top view of the regions => a map of the chip and the interconnections  
+    - You need to assert all the sizes of the interconnections => a lot of variables 
+
+
+Actually we are not solving the Designer Complexity, we are only moving them form the designer to the EDA 
+vendor, so the overall design **Complexity**is shared between: 
+- Designers => they want a low time 2 market
+- Si Vendors (Manufacturers) => they want to produce the same chips => less cost they have to make only one mask
+- EDA Vendor => they want to manage complexity
+```mermaid
+mindmap
+  root((FLOW and METHOD))
+    Designers
+        Low Time 2 Market 
+    Manufacturers
+        Produce the same chips
+    EDA Vendor
+        Manage Complexity
+```
+
+[[1740671482-bulk-cmos|Bulk CMOS]]
+[[1740671504-fd-soi|FD-SOI]]
+[[1740671549-dtmos|DTMOS]]
+[[1740728660-bdcmos|BDCMOS]]
+- [ ] Make atomic note on a NMOS and it's characteristics
+[[1740672093-nmos|NMOS]]
+- [ ] make an atomic note on an inverter and delay capcitance and etc 
+[[1740728887-inverter|Inverter]]
+
+
+
+
+[^1]: ![size_layout_mosfets.png](assets/imgs/size_layout_mosfets.png)
+
+# Laboratory Sessions 
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
