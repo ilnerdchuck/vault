@@ -5,29 +5,27 @@ tags: []
 title: "[SODS] Synthesis and Optimization of Digital Systems"
 ---
 
-### Sources 
+# Sources 
 
 Suggestes Textbooks:
+ - [Synthesis and Optimization of Digital Circuits, G. De Micheli, McGraw-Hill, 1994](https://openlibrary.org/books/OL1432084M/Synthesis_and_optimization_of_digital_circuits)  
+ - [High-Level Synthesis: Introduction to Chip and System Design, D. Gajski, N. Dutt, A. C-H Wu, S. Y-L Lin, Springer, 2012](https://openlibrary.org/works/OL18247032W/High-level_synthesis?edition=key%3A/books/OL1560195M)
+ 
+# Course info 
+Professor: Andrea Calimera => Low power design research  
+Email: [andrea.calimera@polito.it](mailto::andrea.calimera@polito.it) 
 
-### Course info 
-Professor: Andrea Calimera => Low power design research 
-Email: 
-
-
-
-Assistant: Valentino Peluso
-Email:
-
-
-
+Lab Assistant: Valentino Peluso  
+Email: [valentino.peluso@polito.it](mailto::valentino.peluso@polito.it)
 
 Exam Rules:
- - how the grading works 
- - project 
- - written 
+ - Written part exercises + theory => 27/30 
+ - Project: EDA contest, group Project 3 points (+3 if you win the contest)
+> [!DANGER] Project deadline end of June 
 
-Electronic Dessign Automation 
-TCL scripting language
+
+## Laboratory Schedule
+![SODS_lab_Schedule.png](assets/imgs/SODS_lab_Schedule.png)
 
 # Introduction 
 
@@ -67,8 +65,8 @@ But today applications are data intensive
     - Temperature 
     - [[1740682683-process-variation|Process Variation]]
 - Manage multi processing units with [[1740667292-heterogeneous-integration-hi|Heterogeneous integration (HI)]] 
-- [!] they need to be synchronized 
-- [!] they need to be programmed
+    - they need to be synchronized 
+    - they need to be programmed
 
 [[1740671372-electronic-design-automation-eda|Electronic Design Automation (EDA)]] is introduced to reduce the difficulties in design 
 - Brings Efficiency and productivity 
@@ -90,7 +88,7 @@ what information the manufacturer (Si Producer) needs?
 
 
 Actually we are not solving the Designer Complexity, we are only moving them form the designer to the EDA 
-vendor, so the overall design **Complexity**is shared between: 
+vendor, so the overall design **Complexity** is shared between: 
 - Designers => they want a low time 2 market
 - Si Vendors (Manufacturers) => they want to produce the same chips => less cost they have to make only one mask
 - EDA Vendor => they want to manage complexity
@@ -109,13 +107,9 @@ mindmap
 [[1740671504-fd-soi|FD-SOI]]
 [[1740671549-dtmos|DTMOS]]
 [[1740728660-bdcmos|BDCMOS]]
-- [ ] Make atomic note on a NMOS and it's characteristics
 [[1740672093-nmos|NMOS]]
-- [ ] make an atomic note on an inverter and delay capcitance and etc 
 [[1740728887-inverter|Inverter]]
-
-
-
+[[1740732718-tool-command-language-tcl|Tool Command Language (TCL)]]
 
 [^1]: ![size_layout_mosfets.png](assets/imgs/size_layout_mosfets.png)
 
