@@ -8,12 +8,23 @@ title: "[MS] Microelectronics Systems"
 ### Sources 
 
 Suggestes Textbooks:
- - Book Title
-
+ - [Digital Integrated Circuits A Design Perspective by Rabaey, Chandrakasan, Nikolic ](https://openlibrary.org/works/OL26437434W/Digital_Integrated_Circuits?edition=key%3A/books/OL35720852M)
+ - [CMOS VLSI Design by NEIL H.E. Harris, David Weste](https://openlibrary.org/works/OL9402217W/CMOS_VLSI_DESIGN?edition=key%3A/books/OL10460377M)
+ - [Computer architecture a quantitative approach 5th ed. by John L. Hennessy](https://openlibrary.org/works/OL16184111W/Computer_architecture?edition=key%3A/books/OL25060968M)
 ### Course info 
-Professor: 
-Email:
- 
+Professor: Mariagrazia Graziano 
+Email: [mariagrazia.graziano@polito.it](mailto::mariagrazia.graziano@polito.it)
+Office: 4th floor room 32 
+
+Lab Professors:
+ - Giovanna
+    - Email:
+    - only organization related topic
+ - dd
+    - Email:
+    - technical questions
+ - 
+ - 
 
 Exam Rules:
  - how the grading works 
@@ -21,7 +32,7 @@ Exam Rules:
 
 # Recap 
 
-ASIC
+[[1740733488-asic|ASIC]]
     - Data Memory 
     - Computation Unit (CU): Hierarchical FSM ?
     - Data Path: Arithmetic 
