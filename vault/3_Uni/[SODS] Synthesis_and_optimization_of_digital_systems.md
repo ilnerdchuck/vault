@@ -51,14 +51,17 @@ Manufacturers can achieve this goals with => [[1740669411-technology-scaling-ts|
 TS => Helps to have faster MCU but it is not free performance 
 we need to keep an eye on **Power**, **Aging** and **Process Variation**
 
+We hit a power wall => [[1741188238-dark-silicon|Dark Silicon]].
 As the manufacturers capabilities ends at some points further optimizations can be done, by the Designers, via: 
 [[1740670007-architectural-scaling|Architectural Scaling]] 
 
-But today applications are data intensive
-    - Memory is a bottleneck => we need to move data from CPU to memory ([[1740670374-memory-wall|Memory Wall]])
-    - We switch to dataflow cores => [[1740670519-hardware-accelerator|Hardware Accelerator]], cored designed to perform very well specific operations (like matrix operations for ML) 
-     ![data_efficiency.png](assets/imgs/data_efficiency.png)
+=> this moved the industry towards [[1740667815-multi-core|Multi Core]] silicons.
 
+But today applications are data intensive
+ - Memory is a bottleneck => we need to move data from CPU to memory ([[1740670374-memory-wall|Memory Wall]])
+ - We switch to dataflow cores => [[1740670519-hardware-accelerator|Hardware Accelerator]], cored designed to perform very well specific operations (like matrix operations for ML) 
+     ![data_efficiency.png](assets/imgs/data_efficiency.png)
+=> [[1740667292-heterogeneous-integration-hi|heterogeneous]] architectures multi-core + accelerators
 [[1740669411-technology-scaling-ts|Technology scaling (TS)]] + [[1740670007-architectural-scaling|Architectural Scaling]] = A lot of Complexity  
 - Technology scaling brings
     - Leakage and power 
@@ -96,34 +99,105 @@ vendor, so the overall design **Complexity** is shared between:
 mindmap
   root((FLOW and METHOD))
     Designers
-        Low Time 2 Market 
+        Low Time 2 Market
+        High quality 
+        Low effort
     Manufacturers
-        Produce the same chips
+        Produce the same chips => yield
     EDA Vendor
         Manage Complexity
+        Portability among technologies
 ```
 
-[[1740671482-bulk-cmos|Bulk CMOS]]
-[[1740671504-fd-soi|FD-SOI]]
-[[1740671549-dtmos|DTMOS]]
-[[1740728660-bdcmos|BDCMOS]]
-[[1740672093-nmos|NMOS]]
-[[1740728887-inverter|Inverter]]
-[[1740732718-tool-command-language-tcl|Tool Command Language (TCL)]]
+- [[1740671482-bulk-cmos|Bulk CMOS]]
+- [[1740671504-fd-soi|FD-SOI]]
+- [[1740671549-dtmos|DTMOS]]
+- [[1740728660-bdcmos|BDCMOS]]
+- [[1740672093-nmos|NMOS]]
+- [[1740728887-inverter|Inverter]]
+- [[1740732718-tool-command-language-tcl|Tool Command Language (TCL)]]
 
 [^1]: ![size_layout_mosfets.png](assets/imgs/size_layout_mosfets.png)
 
+# 5/03/2024
+- [ ] Make a mind map with the first slide.
+
+## Design Flow and Method
+Discretization of 
+- primitives: Library based, design is interconnections of primitives
+- Optimization
+    - Heuristic: not all possible solution are visited/asserted
+
+Abstraction
+- Raise the design entry level => higher level descriptions 
+- sweeps from low level (More details) to high level (low details) like programming languages
+
+Discretization + Abstraction 
+
+Unified Design Flow: multi level iterative process
+1. Modeling: describe the circuit
+2. optimization: refine the circuit
+3. Verification: check:
+    - Functionalities
+    - Rules
+These steps are managed with Libraries (Libraries are a collection of 
+    macroresurces to achieve the level of given abstraction ex Logic abstraction => Library= AND,OR,NOT)
+
+Y-Chart:
+![y_chart.png](assets/imgs/y_chart.png)
+- Structural: How primitives are connected
+- Behavioural: What the circuit does
+- Physical: Geometry and placement of primitives
+- Circles define the level of details (Closer to the origin means more level):
+    - Software: task implemented by CPUs and Memories
+    - Architectural: Operations implemented by micro resources 
+    - RTL logic: Boolean equations and storage implemented by Flip-Flops and Gates
+    - Circuit: Electrical equations implemented by transistors
+
+The intersections are the implementation of the abstraction level at different level 
+of detail
+We can move across from each vertix of the chart:
+- Synthesis => Behavioural -> Structural Define the structure of a circuit implementation
+- Physical Synthesis => structural -> Physical
+    - moving towards the origin we have Floorplan (Plcement of macroblocks) -> placement (internal layout of a macroblock)
+    - at the circuit level we need to specify a mos topology
+    - PS => floorplanning -> Placement -> silicon sopology  
+- Optimizations can be performed on each intersection of the structural level => model refinement with a given cost function  
+=> but to reduce the optimal solution to the cost function is not one but could be a set => we need to find the 
+Pareto optimal implementation -> the pareto curve 
+- pareto point: point not dominated at least it has at least one objective that is higher than the current one 
+    ex in the drawings 
+- Pareto curve: Interconnection of pareto points
+- The tools are capable of searching into the design space with constraints the possible cost functions solutions
+and returns one possible solution a pareto point (The trivial solution, where we can start exploring the possible solutions)
+by iterating on different constraints we can start tracing the pareto curve. 
+
+Design flow flow example in the drawings
+
 # Laboratory Sessions 
 
+## Lab0
 
-
-
-
-
-
-
-
-
+- [[1741101916-high-level-synthesis|High Level Synthesis]]
+- [[1741192926-low-level-synthesis|Low Level Synthesis]]
+### Physical Design
+[[1741102207-physical-design|Physical Design]] (Add tool example);
+- [[1741102152-floorplanning|Floorplanning]]
+- [[1741102160-placement|Placement]]
+- [[1741102180-logic-refinement|Logic Refinement]]
+- [[1741102232-clock-tree-synthesis|Clock Tree Synthesis]]
+- [[1741102239-routing|Routing]] => post  routing optimizations
+### Physical Verification
+### IC Package Design
+### Logic Design +++ 
+synthesys steps:
+- Standard design flow with synopsys tools: 
+    - Synthesys 
+    - static timing 
+    - post synthesys simulaiton 
+- Analyze the curcuit
+    - analyze the cicuit
+- Post synthesys optimizations
 
 
 

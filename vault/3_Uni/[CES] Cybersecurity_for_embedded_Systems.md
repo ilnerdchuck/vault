@@ -90,7 +90,8 @@ Security has begun to be an issue it has to be considered since the design phase
 - [[1740850861-hash-function|Hash Function]]
 - [[1740850532-plaintext-padding|Plaintext Padding]]
 - [[1740850831-data-integrity|Data Integrity]]
-
+- [[1741004467-random-number-generation|Random Number Generation]]
+- [[1741451140-denial-of-service-dos|Denial Of Service (DoS)]]
 
 ## [[1740842949-symmetric-cryptography|Symmetric Cryptography]] 
 
@@ -106,7 +107,7 @@ Security has begun to be an issue it has to be considered since the design phase
 - [[1740850461-cipher-feedback-cfb|Cipher Feedback (CFB)]]
 - [[1740850488-output-feedback-ofb|Output Feedback (OFB)]]
 
-
+## SC algorithms 
 - [[1740849391-data-encryption-standard-des|Data Encryption Standard (DES)]]
 - [[1740850080-triple-des|Triple DES]]
 - [[1740850107-advanced-encryption-standard-aes|Advanced Encryption Standard (AES)]]
@@ -117,6 +118,8 @@ Security has begun to be an issue it has to be considered since the design phase
 - [[1740850808-elliptic-curves-cryptosystem-ecc|Elliptic Curves Cryptosystem (ECC)]]
 ## Key Exchange
 - [[1740850779-diffie-hellman|Diffie-Hellman]]
+
+## [[1741446603-symmetric-vs-asymmetric-cryptography|Symmetric vs Asymmetric Cryptography]]
 
 ## Cryptographic Hash Algorithms
 Cryptographic Hashes 

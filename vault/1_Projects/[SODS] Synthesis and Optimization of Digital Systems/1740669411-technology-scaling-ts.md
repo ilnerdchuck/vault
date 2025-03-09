@@ -20,6 +20,7 @@ $$
 > [!CHECK] Pros 
 > - Lowering the size of the transistor brings => **Higher Integration Density** $\frac{mm^2}{nTr = \text{Number of Transistors}}$
 > - Lowering the size of the transistor brings => **Faster Switching Speeds**: reduced time to rise
+> - Lower cost
 
 > [!FAILURE] Cons
 > - **Fabrication Cost** increases $\frac{Money}{mm^2}$ => but it is balanced by the Higher Integration Density $\frac{mm^2}{nTr} \times \frac{Money}{mm^2} = \frac{Money}{nTr}$
