@@ -153,17 +153,139 @@ This allows macro-instructions that must be translated into large numbers of uop
 up space in the trace cache.
 
 # Out of Order Engine 
+The Out of Order Engine takes care of allocation, renaming and scheduling functions. 
+This is where the instruction are reorddered to increase the performance. By looking at a larger 
+number of instruction from the program at once it can usually find more ready to execute independent 
+instructions. 
 
 ## Allocator
+The first step of the freshly decoded uops is to be allocated in an entry of the **reorder buffer ROB** for the requested 
+resurce. The entries are kept, in program order, until each uop is retired or discarded. The P4 ROB has 
+126 entries, once this entries have been filled the allocation step must stall the uops and wait 
+for space to become available. 
+> [!IMPORTANT]
+> Once a uops is allocated it is allowed to flow in the pipeline
 
 ## Register Renaming
+The register renaming logic renames the IA-32 8 register entries in a 128 [[1743256012-register-alias-table---rat|Register Alias Table - RAT]] physical registers. This also allows the handling of [[1742056018-data-hazard|Data Hazards]], as renaming 
+removes false data conflicts. 
+> [!IMPORTANT]
+> The renaming logic keeps the most up to date value each register, so that a new instruction 
+> can know where to get the correct instance of the needed registers 
 
-## uOPS Queue
+![rat_p4.png](../assets/imgs/rat_p4.png)
+It allocates the ROB entries and the result data Register File (RF) entries
+separately. The ROB entries, which track uop status, consist only of
+the status field and are allocated and deallocated
+sequentially. A sequence number assigned to each uop
+indicates its relative age. The sequence number points to
+the uop’s entry in the ROB array.
 
-## Scheduling & Dispaching 
+## uOPS Scheduling
+The uop schedulers determine when a uop is ready to execute by tracking 
+its input register operands. The uop schedulers are what allows the instructions 
+to be reordered to execute as soon as they are ready, while still
+maintaining the correct dependencies from the original program.
+The P4 has two sets of structures to aid in uop scheduling: 
+ - the uop queues (FIFO):
+    - Memory operations queue: holds all the load and store operations 
+    - General queue: holds all others uOPS  
+    this is to improve performance when memory operations need to wait for the data:
+    meanwhile the general queue uOPS are executed. Thus the queues are FIFO but can be executed 
+    OoO. 
+ - the actual uOP schedulers:  A lot of schedulers can be used but all behave somewhat 
+    the same: they determine when uops are ready to execute based 
+    on the readiness of their dependent input register operand 
+    sources and the availability of the execution resources. At each cycle 
+    they will check which registers have valid data and dispatch the uOPS.
 
-## Retiring
+> [!IMPORTANT]
+> uOPS enter the scheduler in order but can be dispatched as soon as their operands are ready 
+> thus OoO
+
+## Dispatching
+There are four dispatch ports: 
+ - two execution unit in port 0 and 1: they can dispatch up to two operations per clock cycle.
+ The fast ALU can schedule at every edge of the clock or at half of the main clock cycle, meanwhile
+ the other schedulers can only schedule one operation per clock cycle.
+ - Load 
+ - Store
+
+![dispatch_p4_ports.png](../assets/imgs/dispatch_p4_ports.png)
+
+# Retiring
+This step is performed after the rest of the execution unit pipeline has finished, but it refers to 
+the OoO block ad the result of the operations needs to be checked and committed in order. For example if the 
+instruction was a branch the actual result is compared with the predicted one. The front end [[#BTB]] and 
+[[#Trace Cache BTB]] are updated with the branch behavior. If the branch was mispredicted, the [[#Trace Cache BTB]] is 
+signaled to read uOPS from the correct address. If the prediction was correct no events occur and the 
+uOP is retired. Once retired the uOPS results are committed to the current architectural state in the RAT 
+and all the resources allocated are released.
 
 # Integer and Floating point unit
 
+The execution units are designed to optimize
+overall performance by handling the most common cases
+as fast as possible. There are several different execution
+units in the P4 microarchitecture: the units used to
+execute integer operations include the low-latency integer
+ALUs, the complex integer instruction unit, the load and
+store address generation units, and the L1 data cache.
+
+![p4_execution_units.png](assets/imgs/p4_execution_units.png)
+
+The Integer and floating-point register files sit between
+the schedulers and the execution units. Each register file also has
+a multi-clock bypass network that bypasses or forwards
+just-completed results, which have not yet been written
+into the register file, to the new dependent uops ([[1742137932-forwarding|Forwarding]]).
+There are three separate processor for the actual uOPS:
+ - **Integer Execution Unit (IEU)**: performs all the integer operations and branches. 
+ - **Floating Point Unit (FPU)**: performs all the floating point and [[1740675970-simd|SIMD]] operations. 
+ - **Memory Execution Unit (MEU)**: that performs loads and stores operations
+All execution units are connected to the [[#Level 1 (L1) Data Cache]] with a 
+Data Translation Lookaside Buffer (DTLB) for the virtual to physical address translation. 
+When an execution is completed, if there is a result it will be committed to the register files.
+
 # Memory Subsystem
+The memory subsystem includes the
+Level 2 (L2) cache and the system bus. The L2 cache
+stores data that cannot fit in the Level 1 (L1) caches. The
+external system bus is used to access main memory when
+the L2 cache has a cache miss and also to access the
+system I/O devices.
+
+## Level 1 (L1) Data Cache 
+The Level 1 (L1) data cache is an 8K-byte cache that is
+used for both integer and floating-point/SSE loads and
+stores. It is organized as a 4-way set-associative cache
+that has 64 bytes per cache line. It is a write-through
+cache, which means that writes to it are always copied
+into the L2 cache. It can do one load and one store per
+clock cycle. The latency of load operations is a key aspect of processor
+performance. This is especially true for IA-32 programs
+that have a lot of loads and stores because of the limited
+number of registers in the instruction set.
+
+
+## Level 2 Instruction and Data cache
+The L2 cache is a 256K-byte cache that holds both
+instructions that miss the Trace Cache and data that miss
+the L1 data cache. The L2 cache is organized as an 8-way
+set-associative cache with 128 bytes per cache line.
+The L2 cache has a write-back cache policy.
+
+Associated with the L2 cache is a hardware pre-fetcher that
+monitors data access patterns and prefetches data
+automatically into the L2 cache. It attempts to stay 256
+bytes ahead of the current data access locations. This
+prefetcher remembers the history of cache misses to
+detect concurrent, independent streams of data that it tries
+to prefetch ahead of use in the program. The pre-fetcher
+also tries to minimize prefetching unwanted data that can
+cause over utilization of the memory system and delay the
+real accesses the program needs.
+
+# In depth analysys
+ - P4 adder
+ etc....
