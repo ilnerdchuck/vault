@@ -30,54 +30,27 @@ Exam Rules:
 
 # Recap 
 
-[[1740733488-asic|ASIC]]
-    - Data Memory 
-    - Computation Unit (CU): Hierarchical FSM ?
-    - Data Path: Arithmetic 
+## Microelectronic System
 
-General Purpose
-    microProcessor => [[1740926359-istruction-set-architecture|Istruction Set Architecture]] (Instruction Set Architecture)
-    ![ISA_Arch.png](assets/imgs/ISA_Arch.png)
-
-ISA Classification
- - Load/Store Architecture ([[1740926402-risc|RISC]])
- - Register/Memory ([[1740926407-cisc|CISC]] => x86, IBM)
- - Register+Memory ([[1740926407-cisc|CISC]] => VAX)
-
-> [!TIP]
-> in real life only the 20% of the (ISA or written program?) is used 
-
-CISC 
- - Shorter programs, Reduced Memory, Reduced Silicon for Registers
- - Nowadays the CISC CPUs translate the instructions in RISC instructions
-RISC 
- - Low number of instructions 
- - fixed length? What does it mean? All architectures have fixed length instructions 
- - Simpler addressing mode
- - Simpler and faster Hardware 
- - Uniform complexity 
- - Larger number of registers
- - Binary compatibility?: ability for the binary to be run on an another microP with the same arch
- - bad bandwidth to memory management 
-
+- [[1740733488-asic|ASIC]]
+- [[1740926359-istruction-set-architecture|Istruction Set Architecture - ISA]]
+- [[1740926407-cisc|CISC]] 
+- [[1740926402-risc|RISC]] 
 - [[1740927067-sequential-processor|Sequential Processor]]
 - [[1740927090-pipelined-processor|Pipelined Processor]]
 - [[1740667815-multi-core|Multi Core]]
 - [[1740927250-register-window|Register Window]]
 - [[1740928174-memory-hierarchy|Memory Hierarchy]]
-
-![[1740926625-dlx|DLX]]
-[[1741169857-ultrasparc-t2|UltraSPARC T2]]
-[[1741169817-pentium-4-intel|Pentium 4 (Intel)]]
-
-[[1741185023-superscalar-processor|Superscalar Processor]]
+- [[1741185023-superscalar-processor|Superscalar Processor]]
 - Carry lookahead adder
-[[Register File]]
+- [[Register File]]
 
-we need multiply and accumulate for AI (they are only weighted sums)
+[[1740926625-dlx|DLX]]
+[[1741169817-pentium-4-intel|Pentium 4 (Intel)]]
+[[1741169857-ultrasparc-t2|UltraSPARC T2]]
 
 
-
+- Body effect?
 
 # Topic 3
 # Laboratories 

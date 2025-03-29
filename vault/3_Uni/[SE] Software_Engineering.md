@@ -106,12 +106,12 @@ In a waterfall model view
 ==Waterfall model==
 CRUD
 
-# Topic 3
+# Project
 
-
-
-# Laboratory Sessions 
-
+- documentation 19/04
+- Code implementation 31/05
+- Final Code 07/06
+- Dockaer implementation 22/06
 
 
 

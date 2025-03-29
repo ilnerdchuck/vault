@@ -122,7 +122,6 @@ Security has begun to be an issue it has to be considered since the design phase
 ## [[1741446603-symmetric-vs-asymmetric-cryptography|Symmetric vs Asymmetric Cryptography]]
 
 ## Cryptographic Hash Algorithms
-Cryptographic Hashes 
 - [[1740850935-cryptographic-hash-algorithm|Cryptographic Hash Algorithm]]
 - [[1740850999-message-integrity-code-mic|Message Integrity Code (MIC)]]
 - [[1740850972-message-authentication-code-mac|Message Authentication Code (MAC)]]
@@ -132,7 +131,40 @@ Cryptographic Hashes
 [[1740851163-digital-certificate|Digital Certificate]]
 [[1740851189-chain-of-trust|Chain Of Trust]]
 
-# Topic 2 
+# Secure Coding
+
+- [[1741608812-static-analyzer|Static Analyzer]]
+- [[1741608820-linter|Linter]]
+
+- [[1741608539-common-weakness-enumeration---cwe|Common Weakness Enumeration - CWE]]
+- [[1741608558-common-vulnerabilities-and-exposures|Common Vulnerabilities and Exposures]]
+## [[1741608632-memory-vulnerabilities|Memory Vulnerabilities]]
+
+## Types of Vulnerabilities 
+Issued by the MITRE
+- [[1741610353-buffer-overflow-cwe-119|Buffer overflow CWE-119]] 
+- [[1741625650-buffer-overhead-cwe---125|Buffer overhead CWE - 125]] 
+- [[1741625668-use-after-free-cwe---416|Use After Free CWE - 416]]
+- [[1741625688-integer-overflow-cwe---190|Integer overflow CWE - 190]] 
+- [[1741686606-use-of-externally-controlled-formatted-string-cwe---134|Use of Externally Controlled Formatted String CWE - 134]]
+- [[1741625751-os-command-injection-cwe---78|OS Command Injection CWE - 78]]
+- [[1741625777-improper-imput-validation-cwe-20|Improper Imput Validation CWE-20]]
+- [[1741688030-code-injection|Code Injection]]
+- [[1741689680-code-reuse|Code Reuse]]
+- [[1741690895-return-oriented-programming---rop|Return Oriented Programming - ROP]]
+- [[1741691315-jump-oriented-programming---jop|Jump Oriented Programming - JOP]]
+- [[1741691483-control-flow-integrity---cfi|Control Flow Integrity - CFI]]
+
+----------
+
+# Hardware Security
+TODO: Catch up slide 40
 
 # Topic 3
+
+
+# Laboratories 
+## Lab 1
+
+
 

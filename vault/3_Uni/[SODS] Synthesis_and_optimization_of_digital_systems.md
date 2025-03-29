@@ -61,7 +61,7 @@ But today applications are data intensive
  - Memory is a bottleneck => we need to move data from CPU to memory ([[1740670374-memory-wall|Memory Wall]])
  - We switch to dataflow cores => [[1740670519-hardware-accelerator|Hardware Accelerator]], cored designed to perform very well specific operations (like matrix operations for ML) 
      ![data_efficiency.png](assets/imgs/data_efficiency.png)
-=> [[1740667292-heterogeneous-integration-hi|heterogeneous]] architectures multi-core + accelerators
+=> [[1740667292-heterogeneous-integration-hi|Heterogeneous]] architectures multi-core + accelerators
 [[1740669411-technology-scaling-ts|Technology scaling (TS)]] + [[1740670007-architectural-scaling|Architectural Scaling]] = A lot of Complexity  
 - Technology scaling brings
     - Leakage and power 
@@ -98,16 +98,19 @@ vendor, so the overall design **Complexity** is shared between:
 ```mermaid
 mindmap
   root((FLOW and METHOD))
+    Abstraction
+    Discretization
     Designers
         Low Time 2 Market
-        High quality 
-        Low effort
+        High Quality of Design
+        Low Design effort
     Manufacturers
-        Produce the same chips => yield
+        Produce the same chips max yield
     EDA Vendor
         Manage Complexity
-        Portability among technologies
+        Portability and Convergence technologies
 ```
+
 
 - [[1740671482-bulk-cmos|Bulk CMOS]]
 - [[1740671504-fd-soi|FD-SOI]]
@@ -119,60 +122,35 @@ mindmap
 
 [^1]: ![size_layout_mosfets.png](assets/imgs/size_layout_mosfets.png)
 
-# 5/03/2024
-- [ ] Make a mind map with the first slide.
+## [[1741595972-design-flow-and-method-sods|Design Flow and Method (SODS)]]
+[[1741601698-y-chart|Y chart]]
 
-## Design Flow and Method
-Discretization of 
-- primitives: Library based, design is interconnections of primitives
-- Optimization
-    - Heuristic: not all possible solution are visited/asserted
+----------
 
-Abstraction
-- Raise the design entry level => higher level descriptions 
-- sweeps from low level (More details) to high level (low details) like programming languages
+# Hardware Modeling
+[[1741793750-hardware-modeling|Hardware Modeling]]
 
-Discretization + Abstraction 
 
-Unified Design Flow: multi level iterative process
-1. Modeling: describe the circuit
-2. optimization: refine the circuit
-3. Verification: check:
-    - Functionalities
-    - Rules
-These steps are managed with Libraries (Libraries are a collection of 
-    macroresurces to achieve the level of given abstraction ex Logic abstraction => Library= AND,OR,NOT)
+----------
+# Arch level S&O
+## Scheduling
+define start time operations:
+ - Unconstrained => ASAP (As soon as possible)
+ - Constrained:
+    - Latency constraint => ALAP (As Late As Possible)
+    - Area Constraint 
 
-Y-Chart:
-![y_chart.png](assets/imgs/y_chart.png)
-- Structural: How primitives are connected
-- Behavioural: What the circuit does
-- Physical: Geometry and placement of primitives
-- Circles define the level of details (Closer to the origin means more level):
-    - Software: task implemented by CPUs and Memories
-    - Architectural: Operations implemented by micro resources 
-    - RTL logic: Boolean equations and storage implemented by Flip-Flops and Gates
-    - Circuit: Electrical equations implemented by transistors
+Objective space exploration?
 
-The intersections are the implementation of the abstraction level at different level 
-of detail
-We can move across from each vertix of the chart:
-- Synthesis => Behavioural -> Structural Define the structure of a circuit implementation
-- Physical Synthesis => structural -> Physical
-    - moving towards the origin we have Floorplan (Plcement of macroblocks) -> placement (internal layout of a macroblock)
-    - at the circuit level we need to specify a mos topology
-    - PS => floorplanning -> Placement -> silicon sopology  
-- Optimizations can be performed on each intersection of the structural level => model refinement with a given cost function  
-=> but to reduce the optimal solution to the cost function is not one but could be a set => we need to find the 
-Pareto optimal implementation -> the pareto curve 
-- pareto point: point not dominated at least it has at least one objective that is higher than the current one 
-    ex in the drawings 
-- Pareto curve: Interconnection of pareto points
-- The tools are capable of searching into the design space with constraints the possible cost functions solutions
-and returns one possible solution a pareto point (The trivial solution, where we can start exploring the possible solutions)
-by iterating on different constraints we can start tracing the pareto curve. 
+the mobility gives the tange margin before the time constrint is violated
 
-Design flow flow example in the drawings
+## To exploare pareto we use the List_Scheduling_for_minimum resurces 
+ - we schedule based on the lower or zero slack
+ slack => remaining timing margin, calculated by: t^l_i-l
+## Sharing 
+## Binding
+
+
 
 # Laboratory Sessions 
 
