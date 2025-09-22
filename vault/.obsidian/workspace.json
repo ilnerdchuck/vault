@@ -13,12 +13,12 @@
             "state": {
               "type": "markdown",
               "state": {
-                "file": "0_Uni/Index.md",
+                "file": "0_Uni/University Folder Index.md",
                 "mode": "source",
                 "source": true
               },
               "icon": "lucide-file",
-              "title": "Index"
+              "title": "University Folder Index"
             }
           }
         ]
@@ -172,9 +172,9 @@
   "active": "02f8829a72e8ebb0",
   "lastOpenFiles": [
     "Zettelkasten/Old Index.md",
-    "Zettelkasten/index.md",
-    "0_Uni/Index.md",
     "Index.md",
+    "0_Uni/University Folder Index.md",
+    "Zettelkasten/index.md",
     "2_Archive",
     "1_Projects",
     "0_Uni",
