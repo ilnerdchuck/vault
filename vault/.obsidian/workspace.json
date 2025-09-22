@@ -4,21 +4,21 @@
     "type": "split",
     "children": [
       {
-        "id": "3316da48e4800caf",
+        "id": "b6f2e70c8eddd466",
         "type": "tabs",
         "children": [
           {
-            "id": "907932be60ea8594",
+            "id": "02f8829a72e8ebb0",
             "type": "leaf",
             "state": {
               "type": "markdown",
               "state": {
-                "file": "index.md",
+                "file": "Index.md",
                 "mode": "source",
-                "source": false
+                "source": true
               },
               "icon": "lucide-file",
-              "title": "index"
+              "title": "Index"
             }
           }
         ]
@@ -160,6 +160,7 @@
   },
   "left-ribbon": {
     "hiddenItems": {
+      "bases:Create new base": false,
       "switcher:Open quick switcher": false,
       "graph:Open graph view": false,
       "canvas:Create new canvas": false,
@@ -168,9 +169,21 @@
       "command-palette:Open command palette": false
     }
   },
-  "active": "907932be60ea8594",
+  "active": "02f8829a72e8ebb0",
   "lastOpenFiles": [
-    "Pasted image 20250211222310.png",
-    "index.md"
+    "Energy Management for IoT.md",
+    "Index.md",
+    "Untitled",
+    "Zettelkasten/index.md",
+    "Uni.md",
+    "Zettelkasten/4_Resurces/1740927250-register-window.md",
+    "Zettelkasten/3_Uni/[MS] Microelectronics_Systems.md",
+    "Zettelkasten/1_Projects/Basic_Gates.md",
+    "Zettelkasten/1_Projects/index.md",
+    "Inbox.md",
+    "journal.md",
+    "assets/imgs/apply_case_1.png",
+    "Zettelkasten",
+    "Pasted image 20250211222310.png"
   ]
 }

@@ -6,7 +6,7 @@ tags: []
 title: Pentium 4 (Intel)
 ---
 
-![p4_die_shot.png](../assets/imgs/p4_die_shot.png)
+![p4_die_shot.png](p4_die_shot.png)
 
 The Pentium 4 is an Intel microprocessor. It is a [[1740926407-cisc|CISC]] architecture 
 but it is structured as a [[1740926407-cisc|CISC]] outer shell and an internal 
@@ -79,9 +79,9 @@ The whole pipeline is 20 cycles long an it is organized in four main sections:
  access the main memory in case of: miss, replace and access to I/O. 
 
 General layout:
-![p4_general layout.png](../assets/imgs/p4_general_layout.png)
-![misprediction_p4.png](../assets/imgs/misprediction_p4.png)
-![general_arch_p4.png](../assets/imgs/general_arch_p4.png)
+![p4_general layout.png](p4_general_layout.png)
+![misprediction_p4.png](misprediction_p4.png)
+![general_arch_p4.png](general_arch_p4.png)
 
 # In Order Front End 
 It consists in several units it has:
@@ -173,7 +173,7 @@ removes false data conflicts.
 > The renaming logic keeps the most up to date value each register, so that a new instruction 
 > can know where to get the correct instance of the needed registers 
 
-![rat_p4.png](../assets/imgs/rat_p4.png)
+![rat_p4.png](rat_p4.png)
 It allocates the ROB entries and the result data Register File (RF) entries
 separately. The ROB entries, which track uop status, consist only of
 the status field and are allocated and deallocated
@@ -211,7 +211,7 @@ There are four dispatch ports:
  - Load 
  - Store
 
-![dispatch_p4_ports.png](../assets/imgs/dispatch_p4_ports.png)
+![dispatch_p4_ports.png](dispatch_p4_ports.png)
 
 # Retiring
 This step is performed after the rest of the execution unit pipeline has finished, but it refers to 
