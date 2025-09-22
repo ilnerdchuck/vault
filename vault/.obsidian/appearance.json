@@ -1,1 +1,6 @@
-{}
+{
+  "cssTheme": "Vicious",
+  "baseFontSize": 18,
+  "theme": "obsidian",
+  "accentColor": "#007bff"
+}

@@ -13,7 +13,7 @@
             "state": {
               "type": "markdown",
               "state": {
-                "file": "index.md",
+                "file": "0_Uni/index.md",
                 "mode": "source",
                 "source": true
               },
@@ -171,14 +171,15 @@
   },
   "active": "02f8829a72e8ebb0",
   "lastOpenFiles": [
-    "0_Uni/University Folder Index.md",
-    "Zettelkasten/Old Index.md",
     "index.md",
+    "assets/note_templates",
+    "Untitled.md",
+    "0_Uni/index.md",
+    "Zettelkasten/Old Index.md",
     "Zettelkasten/index.md",
     "2_Archive",
     "1_Projects",
     "0_Uni",
-    "Untitled.md",
     "Energy Management for IoT.md",
     "Uni.md",
     "Zettelkasten/4_Resurces/1740927250-register-window.md",

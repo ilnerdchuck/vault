@@ -3,6 +3,7 @@ id: garden
 aliases: []
 tags: [index]
 title: Welcome to IlNerdChuck Garden
+draft: false
 ---
 
 I switched to a modified PARA method (Zettelkasten wasn't working for me) to suit my University notes and Personal Projects
