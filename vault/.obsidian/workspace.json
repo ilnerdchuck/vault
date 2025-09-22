@@ -13,12 +13,12 @@
             "state": {
               "type": "markdown",
               "state": {
-                "file": "Zettelkasten/Old Index.md",
+                "file": "0_Uni/Index.md",
                 "mode": "source",
                 "source": true
               },
               "icon": "lucide-file",
-              "title": "Old Index"
+              "title": "Index"
             }
           }
         ]
@@ -171,6 +171,7 @@
   },
   "active": "02f8829a72e8ebb0",
   "lastOpenFiles": [
+    "Zettelkasten/Old Index.md",
     "Zettelkasten/index.md",
     "0_Uni/Index.md",
     "Index.md",
@@ -179,7 +180,6 @@
     "0_Uni",
     "Untitled.md",
     "Energy Management for IoT.md",
-    "Zettelkasten/Old Index.md",
     "Uni.md",
     "Zettelkasten/4_Resurces/1740927250-register-window.md",
     "Zettelkasten/3_Uni/[MS] Microelectronics_Systems.md",
