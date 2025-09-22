@@ -1,8 +1,8 @@
 ---
-id: garden
+id: old_garden
 aliases: []
 tags: []
-title: Welcome to IlNerdChuck Garden
+title: Old_Zettelkasten
 ---
 
 How i plan to structure my garden:
