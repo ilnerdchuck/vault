@@ -4,24 +4,39 @@
     "type": "split",
     "children": [
       {
-        "id": "c37ff127f1b4bbcc",
+        "id": "e682545ec08d78ff",
         "type": "tabs",
         "children": [
           {
-            "id": "8fbedfe83109ad34",
+            "id": "3a72ee3e07348e06",
             "type": "leaf",
             "state": {
               "type": "markdown",
               "state": {
-                "file": "0_Uni/[ESE] Electronic systems engineering/try.md",
+                "file": "1_Projects/Obsidian/index.md",
+                "mode": "source",
+                "source": true
+              },
+              "icon": "lucide-file",
+              "title": "index"
+            }
+          },
+          {
+            "id": "83fda4fd36cc7ed7",
+            "type": "leaf",
+            "state": {
+              "type": "markdown",
+              "state": {
+                "file": "1_Projects/Obsidian/CheatSheet.md",
                 "mode": "source",
                 "source": false
               },
               "icon": "lucide-file",
-              "title": "try"
+              "title": "CheatSheet"
             }
           }
-        ]
+        ],
+        "currentTab": 1
       }
     ],
     "direction": "vertical"
@@ -53,7 +68,7 @@
             "state": {
               "type": "search",
               "state": {
-                "query": "",
+                "query": "tag:Project_Index",
                 "matchingCase": false,
                 "explainSearch": false,
                 "collapseAll": false,
@@ -94,7 +109,7 @@
             "state": {
               "type": "backlink",
               "state": {
-                "file": "0_Uni/[ESE] Electronic systems engineering/try.md",
+                "file": "1_Projects/Obsidian/CheatSheet.md",
                 "collapseAll": false,
                 "extraContext": false,
                 "sortOrder": "alphabetical",
@@ -104,7 +119,7 @@
                 "unlinkedCollapsed": true
               },
               "icon": "links-coming-in",
-              "title": "Backlinks for try"
+              "title": "Backlinks for CheatSheet"
             }
           },
           {
@@ -157,7 +172,7 @@
             "state": {
               "type": "footnotes",
               "state": {
-                "file": "0_Uni/[ESE] Electronic systems engineering/try.md"
+                "file": "1_Projects/Obsidian/CheatSheet.md"
               },
               "icon": "lucide-file-signature",
               "title": "Footnotes"
@@ -184,12 +199,23 @@
       "workspaces:Manage workspace layouts": false
     }
   },
-  "active": "8fbedfe83109ad34",
+  "active": "83fda4fd36cc7ed7",
   "lastOpenFiles": [
-    "assets/note_templates/new_note.md",
-    "0_Uni/[ESE] Electronic systems engineering/try.md",
+    "1_Projects/Obsidian/index.md",
+    "1_Projects/Obsidian/CheatSheet.md",
+    "index.md",
+    "1_Projects/Obsidian",
+    "3_Archive/index.md",
+    "2_Resources/index.md",
     "0_Uni/[ESE] Electronic systems engineering/index.md",
     "0_Uni/index.md",
+    "0_Uni/[ESE] Electronic systems engineering/try.md",
+    "1_Projects/index.md",
+    "2_Resources",
+    "1_Projects/Untitled.base",
+    "1_Projects/Untitled 1.base",
+    "uni.md",
+    "assets/note_templates/new_note.md",
     "0_Uni/[ESE] Electronic systems engineering/Topic_1.md",
     "0_Uni/[ESE] Electronic systems engineering/Introduzione.md",
     "0_Uni/[ESE] Electronic systems engineering/djkejdelkjdelkjdelkj.md",
@@ -199,12 +225,11 @@
     "3_Inbox/202509231057.md",
     "Untitled.md",
     "3_Inbox",
-    "index.md",
     "0_Uni/[ESE] Electronic systems engineering",
     "assets/note_templates",
     "Zettelkasten/Old Index.md",
     "Zettelkasten/index.md",
-    "2_Archive",
+    "3_Archive",
     "1_Projects",
     "0_Uni",
     "Energy Management for IoT.md",
@@ -212,11 +237,7 @@
     "Zettelkasten/4_Resurces/1740927250-register-window.md",
     "Zettelkasten/3_Uni/[MS] Microelectronics_Systems.md",
     "Zettelkasten/1_Projects/Basic_Gates.md",
-    "Zettelkasten/1_Projects/index.md",
-    "Inbox.md",
-    "journal.md",
     "assets/imgs/apply_case_1.png",
-    "Zettelkasten",
     "Pasted image 20250211222310.png"
   ]
 }

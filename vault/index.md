@@ -1,21 +1,21 @@
 ---
 id: garden
-aliases: []
-tags: [index]
+aliases:
+  - ganden_entry
+tags:
+  - index
 title: Welcome to IlNerdChuck Garden
 draft: false
 ---
 
 I switched to a modified PARA method (Zettelkasten wasn't working for me) to suit my University notes and Personal Projects
-
 ### Folder Structure 
 
 ##### Main Folders
-- Uni : Used for university notes
-- Projects : Used for personal project hobby or other things i am working on 
-- Resources : General material that can be used in all areas 
-- Archive : Place to store not active or relevant resources or projects
-
+- [[0_Uni/index|Uni/]] : Used for university notes
+- [[1_Projects/index|Projects]] : Used for personal project hobby or other things i am working on 
+- [[2_Resources/index|Resource]] : General material that can be used in all areas 
+- [[3_Archive/index|Archive]] : Place to store not active or relevant resources or projects
 ##### Sub-folders
 - Uni/Course_Name/ or  Projects/Prj_name/:
 	- ./Resources/ : Any relevant resource that is not markdownable 

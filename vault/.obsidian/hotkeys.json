@@ -6,5 +6,23 @@
       ],
       "key": "T"
     }
+  ],
+  "editor:toggle-source": [
+    {
+      "modifiers": [
+        "Mod",
+        "Shift"
+      ],
+      "key": "B"
+    }
+  ],
+  "markdown:toggle-preview": [],
+  "fast-text-color:change-text-color": [
+    {
+      "modifiers": [
+        "Mod"
+      ],
+      "key": "E"
+    }
   ]
 }

@@ -3,5 +3,6 @@
   "showLineNumber": true,
   "newFileLocation": "current",
   "attachmentFolderPath": "assets",
-  "promptDelete": false
+  "promptDelete": false,
+  "readableLineLength": false
 }

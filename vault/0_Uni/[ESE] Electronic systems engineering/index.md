@@ -4,9 +4,10 @@ Date: 2025-09-23
 Time: 12:05
 aliases: []
 tags:
-  - ESE
+  - ESE_Index
+  - index
 title: "[ESE] Electronic Systems Engineering - Index"
-draft: true
+draft: false
 ---
 #### Course Presentation
 
