@@ -2,5 +2,7 @@
   "cssTheme": "Vicious",
   "baseFontSize": 18,
   "theme": "obsidian",
-  "accentColor": "#007bff"
+  "accentColor": "#007bff",
+  "monospaceFontFamily": "Source Code Pro",
+  "textFontFamily": "Helvetica"
 }
