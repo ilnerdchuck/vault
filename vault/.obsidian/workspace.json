@@ -4,21 +4,17 @@
     "type": "split",
     "children": [
       {
-        "id": "8a2fc4930e674d5c",
+        "id": "ae7da04e721a9bc7",
         "type": "tabs",
         "children": [
           {
-            "id": "5136d943cfc016ce",
+            "id": "f35b7d155ec5a04b",
             "type": "leaf",
             "state": {
-              "type": "markdown",
-              "state": {
-                "file": "assets/note_templates/new_note.md",
-                "mode": "source",
-                "source": true
-              },
+              "type": "empty",
+              "state": {},
               "icon": "lucide-file",
-              "title": "new_note"
+              "title": "New tab"
             }
           }
         ]
@@ -156,9 +152,7 @@
             "type": "leaf",
             "state": {
               "type": "footnotes",
-              "state": {
-                "file": "assets/note_templates/new_note.md"
-              },
+              "state": {},
               "icon": "lucide-file-signature",
               "title": "Footnotes"
             }
@@ -184,10 +178,10 @@
       "workspaces:Manage workspace layouts": false
     }
   },
-  "active": "5136d943cfc016ce",
+  "active": "f35b7d155ec5a04b",
   "lastOpenFiles": [
-    "3_Inbox/202509231102.md",
     "assets/note_templates/new_note.md",
+    "3_Inbox/202509231102.md",
     "3_Inbox/202509231049.md",
     "3_Inbox/202509231057.md",
     "0_Uni/[ESE] Electronic systems engineering/Untitled.md",
