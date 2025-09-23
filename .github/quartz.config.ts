@@ -18,7 +18,8 @@ const config: QuartzConfig = {
     locale: "en-US",
     baseUrl: "ilnerdchuck.github.io/vault",
     ignoreFiles: [  
-      "content/assets/*",  
+      "content/assets/",  
+      "assets/",  
     ],  
     ignorePatterns: ["private", "templates", ".obsidian"],
     defaultDateType: "created",
