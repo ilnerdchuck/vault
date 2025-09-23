@@ -2,5 +2,6 @@
   "alwaysUpdateLinks": true,
   "showLineNumber": true,
   "newFileLocation": "current",
-  "attachmentFolderPath": "assets"
+  "attachmentFolderPath": "assets",
+  "promptDelete": false
 }

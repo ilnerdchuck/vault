@@ -4,17 +4,21 @@
     "type": "split",
     "children": [
       {
-        "id": "ae7da04e721a9bc7",
+        "id": "c37ff127f1b4bbcc",
         "type": "tabs",
         "children": [
           {
-            "id": "f35b7d155ec5a04b",
+            "id": "8fbedfe83109ad34",
             "type": "leaf",
             "state": {
-              "type": "empty",
-              "state": {},
+              "type": "markdown",
+              "state": {
+                "file": "0_Uni/[ESE] Electronic systems engineering/index.md",
+                "mode": "source",
+                "source": false
+              },
               "icon": "lucide-file",
-              "title": "New tab"
+              "title": "index"
             }
           }
         ]
@@ -90,7 +94,7 @@
             "state": {
               "type": "backlink",
               "state": {
-                "file": "index.md",
+                "file": "0_Uni/[ESE] Electronic systems engineering/index.md",
                 "collapseAll": false,
                 "extraContext": false,
                 "sortOrder": "alphabetical",
@@ -152,7 +156,9 @@
             "type": "leaf",
             "state": {
               "type": "footnotes",
-              "state": {},
+              "state": {
+                "file": "0_Uni/[ESE] Electronic systems engineering/index.md"
+              },
               "icon": "lucide-file-signature",
               "title": "Footnotes"
             }
@@ -178,17 +184,20 @@
       "workspaces:Manage workspace layouts": false
     }
   },
-  "active": "f35b7d155ec5a04b",
+  "active": "8fbedfe83109ad34",
   "lastOpenFiles": [
+    "0_Uni/index.md",
+    "0_Uni/[ESE] Electronic systems engineering/index.md",
+    "0_Uni/[ESE] Electronic systems engineering/Topic_1.md",
+    "0_Uni/[ESE] Electronic systems engineering/Introduzione.md",
+    "0_Uni/[ESE] Electronic systems engineering/djkejdelkjdelkjdelkj.md",
     "assets/note_templates/new_note.md",
+    "0_Uni/[ESE] Electronic systems engineering/Untitled 1.md",
     "3_Inbox/202509231102.md",
     "3_Inbox/202509231049.md",
     "3_Inbox/202509231057.md",
-    "0_Uni/[ESE] Electronic systems engineering/Untitled.md",
-    "0_Uni/[ESE] Electronic systems engineering/Untitled 1.md",
     "Untitled.md",
     "3_Inbox",
-    "0_Uni/index.md",
     "index.md",
     "0_Uni/[ESE] Electronic systems engineering",
     "assets/note_templates",
