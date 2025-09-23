@@ -5,4 +5,5 @@ Time: {{time}}
 aliases: []
 tags: []
 title: {{title}}
+draft: true
 ---

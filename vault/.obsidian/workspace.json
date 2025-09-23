@@ -13,12 +13,12 @@
             "state": {
               "type": "markdown",
               "state": {
-                "file": "3_Inbox/202509231102.md",
+                "file": "assets/note_templates/new_note.md",
                 "mode": "source",
                 "source": true
               },
               "icon": "lucide-file",
-              "title": "202509231102"
+              "title": "new_note"
             }
           }
         ]
@@ -157,7 +157,7 @@
             "state": {
               "type": "footnotes",
               "state": {
-                "file": "3_Inbox/202509231102.md"
+                "file": "assets/note_templates/new_note.md"
               },
               "icon": "lucide-file-signature",
               "title": "Footnotes"
@@ -186,8 +186,8 @@
   },
   "active": "5136d943cfc016ce",
   "lastOpenFiles": [
-    "assets/note_templates/new_note.md",
     "3_Inbox/202509231102.md",
+    "assets/note_templates/new_note.md",
     "3_Inbox/202509231049.md",
     "3_Inbox/202509231057.md",
     "0_Uni/[ESE] Electronic systems engineering/Untitled.md",
