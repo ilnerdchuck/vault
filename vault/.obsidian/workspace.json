@@ -13,12 +13,12 @@
             "state": {
               "type": "markdown",
               "state": {
-                "file": "0_Uni/[ESE] Electronic systems engineering/index.md",
+                "file": "0_Uni/[ESE] Electronic systems engineering/try.md",
                 "mode": "source",
                 "source": false
               },
               "icon": "lucide-file",
-              "title": "index"
+              "title": "try"
             }
           }
         ]
@@ -94,7 +94,7 @@
             "state": {
               "type": "backlink",
               "state": {
-                "file": "0_Uni/[ESE] Electronic systems engineering/index.md",
+                "file": "0_Uni/[ESE] Electronic systems engineering/try.md",
                 "collapseAll": false,
                 "extraContext": false,
                 "sortOrder": "alphabetical",
@@ -104,7 +104,7 @@
                 "unlinkedCollapsed": true
               },
               "icon": "links-coming-in",
-              "title": "Backlinks for index"
+              "title": "Backlinks for try"
             }
           },
           {
@@ -157,7 +157,7 @@
             "state": {
               "type": "footnotes",
               "state": {
-                "file": "0_Uni/[ESE] Electronic systems engineering/index.md"
+                "file": "0_Uni/[ESE] Electronic systems engineering/try.md"
               },
               "icon": "lucide-file-signature",
               "title": "Footnotes"
@@ -186,12 +186,13 @@
   },
   "active": "8fbedfe83109ad34",
   "lastOpenFiles": [
-    "0_Uni/index.md",
+    "assets/note_templates/new_note.md",
+    "0_Uni/[ESE] Electronic systems engineering/try.md",
     "0_Uni/[ESE] Electronic systems engineering/index.md",
+    "0_Uni/index.md",
     "0_Uni/[ESE] Electronic systems engineering/Topic_1.md",
     "0_Uni/[ESE] Electronic systems engineering/Introduzione.md",
     "0_Uni/[ESE] Electronic systems engineering/djkejdelkjdelkjdelkj.md",
-    "assets/note_templates/new_note.md",
     "0_Uni/[ESE] Electronic systems engineering/Untitled 1.md",
     "3_Inbox/202509231102.md",
     "3_Inbox/202509231049.md",
